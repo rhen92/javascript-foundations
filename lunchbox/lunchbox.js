@@ -9,6 +9,7 @@ class LunchBox {
   }
   acquireSnack(fruitSnack) {
     this.snacks.push(fruitSnack);
+    fruitSnack.isInLunchBox = true;
     }
   findHealthySnacks() {
     for(var i = 0; i < this.snacks.length; i++) {
